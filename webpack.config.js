@@ -6,22 +6,22 @@ module.exports = (env) => ({
   entry: './src/index.js',
   plugins: [
     new HtmlWebpackPlugin({
-     title: 'Development',
+      title: 'Development',
     }),
     new Dotenv({
-      path: (env.development) ?  `./.env.development` :  `./.env.production`
+      path: env.development ? `./.env.development` : `./.env.production`,
     }),
   ],
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist/public'),
   },
 });

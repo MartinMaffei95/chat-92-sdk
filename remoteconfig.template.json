@@ -1,0 +1,15 @@
+{
+  "hosting": [
+    {
+      "target": "sdk",
+      "public": "sdk/dist",
+      "ignore": ["firebase.json", "index.html", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/main.js"
+        }
+      ]
+    }
+  ]
+}

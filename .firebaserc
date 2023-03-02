@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "chat92-sdk"
+  },
+  "targets": {
+    "saas-sdk-example": {
+      "hosting": {
+        "sdk": [
+          "saas-sdk"
+        ]
+      }
+    }
+  }
+}
