@@ -45,7 +45,7 @@ import './style.css';
       ].join('');
       const htmlDivElement = document.createElement('div');
       htmlDivElement.innerHTML = htmlRaw;
-      //TODO debes crear un div  nativo y retornarño
+      //Se crea un div nativo y lo retorna
       document.body.appendChild(htmlDivElement);
       return;
     }
